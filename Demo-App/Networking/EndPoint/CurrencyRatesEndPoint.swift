@@ -20,7 +20,7 @@ extension CurrencyRatesEndPoint: TargetType{
     }
     
     var baseURL: String {
-        return "http://data.fixer.io/api/"
+        return "http://data.fixer.io/api"
     }
     
     var path: String {
@@ -33,8 +33,8 @@ extension CurrencyRatesEndPoint: TargetType{
     var task: Task {
         var bodyParam: [String: Any] = [:]
         switch self {
-        case .getCurrenceyRates:
-            bodyParam = ["access_key":apiKey]
+        case let .getCurrenceyRates(base):
+            bodyParam = ["access_key": apiKey ,"base": base ]
             return .requestParameters(parameters: bodyParam)
         }
     }
