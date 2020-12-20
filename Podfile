@@ -8,6 +8,8 @@ target 'Demo-App' do
   # Pods for Demo-App
   pod 'Alamofire'
   pod 'ObjectMapper'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'Demo-AppTests' do
     inherit! :search_paths

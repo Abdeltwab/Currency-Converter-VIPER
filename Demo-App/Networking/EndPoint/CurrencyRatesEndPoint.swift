@@ -8,13 +8,12 @@
 import Alamofire
 
 
-enum CurrencyEndPoint{
-    //MARK: base has not effect as the API only suuport EUR for        current plan
-    case getCurrenceyRates(base: String = "EUR")
+enum CurrencyRatesEndPoint{
+    case getCurrenceyRates(base: String)
 }
 
 
-extension CurrencyEndPoint: TargetType{
+extension CurrencyRatesEndPoint: TargetType{
     
     var apiKey: String {
         return "2efed38141caa5076c9f25f4ce1a4fb4"
@@ -35,7 +34,6 @@ extension CurrencyEndPoint: TargetType{
         var bodyParam: [String: Any] = [:]
         switch self {
         case .getCurrenceyRates:
-           //MARK: not usd
             bodyParam = ["access_key":apiKey]
             return .requestParameters(parameters: bodyParam)
         }
