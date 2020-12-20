@@ -1,5 +1,5 @@
 //
-//  CurrencyEndPoint.swift
+//  CurrencyRatesService.swift
 //  Demo-App
 //
 //  Created by SAMEH on 12/20/20.
