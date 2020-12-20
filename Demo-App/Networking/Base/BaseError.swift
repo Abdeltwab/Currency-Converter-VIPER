@@ -9,5 +9,4 @@ import Foundation
 
 public enum BaseError: Error {
     case networkingError(erro: String)
-    case test
 }
