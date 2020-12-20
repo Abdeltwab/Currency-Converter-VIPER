@@ -10,19 +10,13 @@ import RxSwift
 import RxCocoa
 
 
-class ViewController: UIViewController,CurrencyNetworkingProtocol {
+class ViewController: UIViewController {
 
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        self.getCurrencyRates(for: "EUR")
-            .bind { res in
-                print(res.0?.rates)
-        }.disposed(by: disposeBag)
+
     }
-
-
 }
 

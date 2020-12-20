@@ -24,6 +24,7 @@
 		503D6503258FF1850071BD33 /* CurrencyRatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D6502258FF1850071BD33 /* CurrencyRatesResponse.swift */; };
 		503D6508258FF3420071BD33 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D6507258FF3420071BD33 /* Currency.swift */; };
 		503D650D258FF5D60071BD33 /* CurrencyNetworkingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D650C258FF5D60071BD33 /* CurrencyNetworkingProtocol.swift */; };
+		503D6512259006B70071BD33 /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D6511259006B70071BD33 /* BaseError.swift */; };
 		F3109F94234E472E3A65BA33 /* Pods_Demo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBB980210B628965908C87 /* Pods_Demo_AppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		503D6502258FF1850071BD33 /* CurrencyRatesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRatesResponse.swift; sourceTree = "<group>"; };
 		503D6507258FF3420071BD33 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		503D650C258FF5D60071BD33 /* CurrencyNetworkingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyNetworkingProtocol.swift; sourceTree = "<group>"; };
+		503D6511259006B70071BD33 /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
 		A7DEEF248A5FFAB948279BCF /* Pods-Demo-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-AppTests.release.xcconfig"; path = "Target Support Files/Pods-Demo-AppTests/Pods-Demo-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B156B897494AC81EE3863793 /* Pods-Demo-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-App.debug.xcconfig"; path = "Target Support Files/Pods-Demo-App/Pods-Demo-App.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB0D8EE913A2E9DC519B1FB /* Pods_Demo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 			children = (
 				503D64E7258FE5710071BD33 /* BaseAPI.swift */,
 				503D64E6258FE5710071BD33 /* TargetType.swift */,
+				503D6511259006B70071BD33 /* BaseError.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -206,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				503D64CE258FDF4E0071BD33 /* RemoteServices */,
-				503D64CD258FDF440071BD33 /* LocalServices */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -217,13 +219,6 @@
 				503D650C258FF5D60071BD33 /* CurrencyNetworkingProtocol.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		503D64CD258FDF440071BD33 /* LocalServices */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LocalServices;
 			sourceTree = "<group>";
 		};
 		503D64CE258FDF4E0071BD33 /* RemoteServices */ = {
@@ -510,6 +505,7 @@
 				503D6508258FF3420071BD33 /* Currency.swift in Sources */,
 				503D64E8258FE5710071BD33 /* TargetType.swift in Sources */,
 				503D650D258FF5D60071BD33 /* CurrencyNetworkingProtocol.swift in Sources */,
+				503D6512259006B70071BD33 /* BaseError.swift in Sources */,
 				503D6495258FDD8F0071BD33 /* ViewController.swift in Sources */,
 				503D64D6258FE1B90071BD33 /* CurrencyRatesEndPoint.swift in Sources */,
 				503D64E9258FE5710071BD33 /* BaseAPI.swift in Sources */,
