@@ -14,5 +14,5 @@ struct CurrencyConverterMainViewModel {
     
     let dataSource = BehaviorRelay<[Currency]>(value: [])
     let selectedCurrency = PublishRelay<Currency>()
-    let fetchUserAllCurrnnyRates = PublishRelay<Void>()
+    let fetchCurrencyRates = PublishRelay<Void>()
 }

@@ -32,9 +32,71 @@ class CurrencyConverterMainPresenter: CurrencyConverterMainPresenterProtocol {
     
     //MARK:- Functions
     func attach() {
-       
+        configureBinding()
+    }
+
+}
+
+
+
+//MARK:- Binding
+extension CurrencyConverterMainPresenter{
+    
+    private func configureBinding(){
+        bindFetchingCurrencyRates()
+        bindSelectedCurrency()
     }
     
-    //MARK:- Private functions
+    private func bindFetchingCurrencyRates(){
+        viewModel
+            .fetchCurrencyRates
+            .flatMap { [weak self] _ -> Observable<[Currency]?> in
+                guard let self = self else {return Observable.just([])}
+                guard let interactor = self.interactor else {return Observable.just([])}
+                return interactor.getCurrencyRates(for: "")
+            }
+            .filter{$0 != nil}
+            .map{$0!}
+            .observeOn(MainScheduler.asyncInstance)
+            .subscribe { [weak self] res in
+                guard let self = self else {return}
+                self.viewModel.dataSource.accept(res)
+            } onError: {err in
+                print(err)
+            }.disposed(by: disposeBag)
+    }
+    
+    private func bindSelectedCurrency(){
+        viewModel.selectedCurrency
+            .bind(onNext: { [weak self] currency in
+                guard let self = self else {return}
+                print(currency)
+            }).disposed(by: disposeBag)
+    }
+}
 
+
+//MARK:- Data Handeler
+extension CurrencyConverterMainPresenter{
+    
+    private func handleError(_ error: Error) {
+        switch error {
+        default:break
+//            viewController?.showSomethingWrongView(title: UserBouquetAddOnsLocalization.generalErrorTitle.localized, message: UserBouquetAddOnsLocalization.unexpextedError.localized, buttonTitle: UserBouquetAddOnsLocalization.retryBtnTitle.localized)
+        }
+    }
+    
+}
+
+
+//MARK:- navigation
+extension CurrencyConverterMainPresenter{
+    
+//    private func navigateToBouquetDetails(bouquet: UserBouquetAddOn){
+//        router.go(to: .bouquetDetails(bouquet: bouquet))
+//    }
+//
+//    private func close(){
+//        router.go(to: .close)
+//    }
 }

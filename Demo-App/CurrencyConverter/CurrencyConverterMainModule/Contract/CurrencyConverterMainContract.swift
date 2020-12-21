@@ -12,6 +12,8 @@ import RxSwift
 
 //MARK: - Router
 enum CurrencyConverterMainRoute {
+    case selectedCurrency
+    case changeCurrencyBase
 }
 
 protocol CurrencyConverterMainRouterProtocol: class {
@@ -30,7 +32,7 @@ protocol CurrencyConverterMainPresenterProtocol: class {
 
 
 //MARK: - Interactor
-protocol CurrencyConverterMainInteractorProtocol: class {
+protocol CurrencyConverterMainInteractorProtocol: CurrencyNetworkingProtocol {
 
     
 }

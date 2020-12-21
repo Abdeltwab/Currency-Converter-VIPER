@@ -29,14 +29,19 @@ class CurrencyConverterMainViewController: UIViewController, CurrencyConverterMa
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.attach()
-        configuureTableView()
+        setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.presenter?.viewModel.fetchCurrencyRates.accept(())
     }
 }
 
 //MARK: - UI
 extension CurrencyConverterMainViewController{
     private func setupUI(){
-        
+        configureBinding()
+        configuureTableView()
     }
     
     private func configureBinding(){
