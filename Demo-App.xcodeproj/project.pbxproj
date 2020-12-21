@@ -52,6 +52,7 @@
 		503D66632590B1790071BD33 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D66622590B1790071BD33 /* UIView+Extention.swift */; };
 		503D66B32590C0060071BD33 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D66B12590C0060071BD33 /* BaseAPI.swift */; };
 		503D66B42590C0060071BD33 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D66B22590C0060071BD33 /* TargetType.swift */; };
+		503D66C42590C5AF0071BD33 /* Questions Answers.md in Resources */ = {isa = PBXBuildFile; fileRef = 503D66C32590C5AE0071BD33 /* Questions Answers.md */; };
 		F3109F94234E472E3A65BA33 /* Pods_Demo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBB980210B628965908C87 /* Pods_Demo_AppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -127,6 +128,7 @@
 		503D66B12590C0060071BD33 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		503D66B22590C0060071BD33 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		503D66BF2590C1A20071BD33 /* Problems.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Problems.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		503D66C32590C5AE0071BD33 /* Questions Answers.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Questions Answers.md"; sourceTree = "<group>"; };
 		A7DEEF248A5FFAB948279BCF /* Pods-Demo-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-AppTests.release.xcconfig"; path = "Target Support Files/Pods-Demo-AppTests/Pods-Demo-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B156B897494AC81EE3863793 /* Pods-Demo-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-App.debug.xcconfig"; path = "Target Support Files/Pods-Demo-App/Pods-Demo-App.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB0D8EE913A2E9DC519B1FB /* Pods_Demo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				503D649E258FDD920071BD33 /* Info.plist */,
+				503D66C32590C5AE0071BD33 /* Questions Answers.md */,
 				503D6534259010690071BD33 /* Root */,
 				503D66BE2590C1680071BD33 /* ProblemsSets */,
 				503D653325900FA80071BD33 /* CurrencyConverter */,
@@ -701,6 +704,7 @@
 				503D6592259026220071BD33 /* CurrencyRateCell.xib in Resources */,
 				503D66442590A05B0071BD33 /* CurrencyChangeViewController.xib in Resources */,
 				503D65382590109B0071BD33 /* RootViewController.xib in Resources */,
+				503D66C42590C5AF0071BD33 /* Questions Answers.md in Resources */,
 				503D65632590148D0071BD33 /* CurrencyConverterMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
