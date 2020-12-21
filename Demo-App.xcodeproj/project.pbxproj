@@ -33,6 +33,8 @@
 		503D65642590148D0071BD33 /* CurrencyConverterMainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D655A2590148D0071BD33 /* CurrencyConverterMainInteractor.swift */; };
 		503D65652590148D0071BD33 /* CurrencyConverterMainLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D655C2590148D0071BD33 /* CurrencyConverterMainLocalization.swift */; };
 		503D65662590148D0071BD33 /* CurrencyConverterMainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D655E2590148D0071BD33 /* CurrencyConverterMainRouter.swift */; };
+		503D6592259026220071BD33 /* CurrencyRateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503D6590259026220071BD33 /* CurrencyRateCell.xib */; };
+		503D6593259026220071BD33 /* CurrencyRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D6591259026220071BD33 /* CurrencyRateCell.swift */; };
 		F3109F94234E472E3A65BA33 /* Pods_Demo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBB980210B628965908C87 /* Pods_Demo_AppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		503D655A2590148D0071BD33 /* CurrencyConverterMainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterMainInteractor.swift; sourceTree = "<group>"; };
 		503D655C2590148D0071BD33 /* CurrencyConverterMainLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterMainLocalization.swift; sourceTree = "<group>"; };
 		503D655E2590148D0071BD33 /* CurrencyConverterMainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConverterMainRouter.swift; sourceTree = "<group>"; };
+		503D6590259026220071BD33 /* CurrencyRateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencyRateCell.xib; sourceTree = "<group>"; };
+		503D6591259026220071BD33 /* CurrencyRateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRateCell.swift; sourceTree = "<group>"; };
 		A7DEEF248A5FFAB948279BCF /* Pods-Demo-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-AppTests.release.xcconfig"; path = "Target Support Files/Pods-Demo-AppTests/Pods-Demo-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B156B897494AC81EE3863793 /* Pods-Demo-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-App.debug.xcconfig"; path = "Target Support Files/Pods-Demo-App/Pods-Demo-App.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB0D8EE913A2E9DC519B1FB /* Pods_Demo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -301,7 +305,7 @@
 				503D65502590148D0071BD33 /* ViewModel */,
 				503D65522590148D0071BD33 /* Contract */,
 				503D65542590148D0071BD33 /* Presenter */,
-				503D65562590148D0071BD33 /* ViewController */,
+				503D656A25901B5E0071BD33 /* View */,
 				503D65592590148D0071BD33 /* Interactor */,
 				503D655B2590148D0071BD33 /* Localization */,
 				503D655D2590148D0071BD33 /* Router */,
@@ -364,6 +368,24 @@
 				503D655E2590148D0071BD33 /* CurrencyConverterMainRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		503D656A25901B5E0071BD33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				503D656E25901B990071BD33 /* CurrencyRateCell */,
+				503D65562590148D0071BD33 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		503D656E25901B990071BD33 /* CurrencyRateCell */ = {
+			isa = PBXGroup;
+			children = (
+				503D6591259026220071BD33 /* CurrencyRateCell.swift */,
+				503D6590259026220071BD33 /* CurrencyRateCell.xib */,
+			);
+			path = CurrencyRateCell;
 			sourceTree = "<group>";
 		};
 		AAC40D4E151FDE5F5D3270AB /* Frameworks */ = {
@@ -486,6 +508,7 @@
 			files = (
 				503D649D258FDD920071BD33 /* LaunchScreen.storyboard in Resources */,
 				503D649A258FDD920071BD33 /* Assets.xcassets in Resources */,
+				503D6592259026220071BD33 /* CurrencyRateCell.xib in Resources */,
 				503D65382590109B0071BD33 /* RootViewController.xib in Resources */,
 				503D65632590148D0071BD33 /* CurrencyConverterMainViewController.xib in Resources */,
 			);
@@ -623,6 +646,7 @@
 				503D655F2590148D0071BD33 /* CurrencyConverterMainViewModel.swift in Sources */,
 				503D65652590148D0071BD33 /* CurrencyConverterMainLocalization.swift in Sources */,
 				503D65372590109B0071BD33 /* RootViewController.swift in Sources */,
+				503D6593259026220071BD33 /* CurrencyRateCell.swift in Sources */,
 				503D6512259006B70071BD33 /* BaseError.swift in Sources */,
 				503D64D6258FE1B90071BD33 /* CurrencyRatesEndPoint.swift in Sources */,
 				503D65612590148D0071BD33 /* CurrencyConverterMainPresenter.swift in Sources */,

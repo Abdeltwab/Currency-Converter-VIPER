@@ -6,9 +6,13 @@
 //
 //
 
-import Foundation
+import RxCocoa
+import RxSwift
+
 
 struct CurrencyConverterMainViewModel {
     
-    let localization =  CurrencyConverterMainLocalization()
+    let dataSource = BehaviorRelay<[Currency]>(value: [])
+    let selectedCurrency = PublishRelay<Currency>()
+    let fetchUserAllCurrnnyRates = PublishRelay<Void>()
 }
