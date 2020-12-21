@@ -13,7 +13,7 @@ import RxCocoa
 class CurrencyConverterMainViewController: UIViewController, CurrencyConverterMainViewControllerProtocol {
     
     //MARK: - Outlets
-    @IBOutlet weak var baseCurrencyView: UIView!
+    @IBOutlet weak var baseCurrencyViewBtn: UIButton!
     @IBOutlet weak var baseCurrencyLabel: UIView!
     @IBOutlet weak var currencyRatesTable: UITableView!
 
@@ -42,6 +42,7 @@ extension CurrencyConverterMainViewController{
     private func setupUI(){
         configureBinding()
         configuureTableView()
+        bindBaseCurrencyViewTapped()
     }
     
     private func configureBinding(){
@@ -49,11 +50,12 @@ extension CurrencyConverterMainViewController{
     }
     
     private func bindBaseCurrencyViewTapped(){
-//        baseCurrencyView.rx.ta()
-//            .do(onNext: { [weak self] _ in
-//                guard let self = self else {return}
-//            }).subscribe()
-//            .disposed(by: disposeBag)
+        baseCurrencyViewBtn.rx.tap
+            .do(onNext: { [weak self] _ in
+                guard let viewModel = self?.presenter?.viewModel else {return}
+                viewModel.changeCurrencyTap.accept(())
+            }).subscribe()
+            .disposed(by: disposeBag)
     }
     
 }

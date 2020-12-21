@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyConverterMainViewController" customModule="Demo_App" customModuleProvider="target">
             <connections>
                 <outlet property="baseCurrencyLabel" destination="rFQ-fv-Vdy" id="vOl-4N-fI0"/>
-                <outlet property="baseCurrencyView" destination="LrM-Ek-W0N" id="4vr-qb-kMO"/>
+                <outlet property="baseCurrencyViewBtn" destination="Afn-a8-vPh" id="BE9-ie-dQB"/>
                 <outlet property="currencyRatesTable" destination="gf6-wy-VhN" id="yKK-Hf-EFm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -37,14 +37,22 @@
                                 <constraint firstAttribute="height" constant="14" id="cGK-UN-2rp"/>
                             </constraints>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afn-a8-vPh">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="dq9-IR-nDV" firstAttribute="centerY" secondItem="rFQ-fv-Vdy" secondAttribute="centerY" id="2M8-Fg-ucb"/>
+                        <constraint firstAttribute="bottom" secondItem="Afn-a8-vPh" secondAttribute="bottom" id="55v-Ad-tcc"/>
+                        <constraint firstAttribute="trailing" secondItem="Afn-a8-vPh" secondAttribute="trailing" id="7ZO-Mi-RvL"/>
+                        <constraint firstItem="Afn-a8-vPh" firstAttribute="leading" secondItem="LrM-Ek-W0N" secondAttribute="leading" id="PNb-2z-P6v"/>
+                        <constraint firstItem="Afn-a8-vPh" firstAttribute="top" secondItem="LrM-Ek-W0N" secondAttribute="top" id="cXd-Wv-JIy"/>
                         <constraint firstItem="dq9-IR-nDV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rFQ-fv-Vdy" secondAttribute="trailing" constant="10" id="iR4-gr-eF3"/>
                         <constraint firstItem="rFQ-fv-Vdy" firstAttribute="centerY" secondItem="LrM-Ek-W0N" secondAttribute="centerY" id="jdE-7D-Tjs"/>
                         <constraint firstItem="rFQ-fv-Vdy" firstAttribute="centerX" secondItem="LrM-Ek-W0N" secondAttribute="centerX" id="m24-U1-5Xr"/>
                         <constraint firstAttribute="trailing" secondItem="dq9-IR-nDV" secondAttribute="trailing" constant="20" symbolic="YES" id="nA6-hE-PBT"/>
+                        <constraint firstItem="Afn-a8-vPh" firstAttribute="leading" secondItem="LrM-Ek-W0N" secondAttribute="leading" id="uAs-FD-HWI"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gf6-wy-VhN">

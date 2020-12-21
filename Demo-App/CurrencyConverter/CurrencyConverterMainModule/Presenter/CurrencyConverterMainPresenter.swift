@@ -73,6 +73,14 @@ extension CurrencyConverterMainPresenter{
                 self.navigateToSelectedCurrency()
             }).disposed(by: disposeBag)
     }
+    
+    private func bindChangeCurrency(){
+        viewModel.changeCurrencyTap
+            .bind(onNext: { [weak self] _ in
+                guard let self = self else {return}
+                self.navigateToChangeCurrency()
+            }).disposed(by: disposeBag)
+    }
 }
 
 
@@ -96,5 +104,11 @@ extension CurrencyConverterMainPresenter{
         let baseCurrency = self.viewModel.baseCurrency.value
         let selectedCurrency = self.viewModel.selectedCurrency.value
         router.go(to: .selectedCurrency(baseCurrency: baseCurrency, selectedCurrency: selectedCurrency))
+    }
+    
+    private func navigateToChangeCurrency(){
+        let baseCurrency = self.viewModel.baseCurrency.value
+        let currencies = self.viewModel.dataSource.value
+        router.go(to: .changeCurrencyBase(baseCurrency: baseCurrency, currencies: currencies))
     }
 }

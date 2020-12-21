@@ -16,4 +16,5 @@ struct CurrencyConverterMainViewModel {
     let selectedCurrency = BehaviorRelay<Currency>(value: Currency())
     let baseCurrency = BehaviorRelay<Currency>(value: Currency())
     let fetchCurrencyRates = PublishRelay<Void>()
+    let changeCurrencyTap = PublishRelay<Void>()
 }
