@@ -8,12 +8,13 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 
 //MARK: - Router
 enum CurrencyConverterMainRoute {
     case selectedCurrency(baseCurrency:Currency, selectedCurrency:Currency)
-    case changeCurrencyBase (baseCurrency:Currency, currencies: [Currency])
+    case changeCurrencyBase (selectedCurrency: BehaviorRelay<Currency>, currencies: [Currency])
 }
 
 protocol CurrencyConverterMainRouterProtocol: class {

@@ -40,9 +40,9 @@ class CurrencyConverterMainRouter: CurrencyConverterMainRouterProtocol {
         case .selectedCurrency(let baseCurrency, let selectedCurrency):
             let vc = CurrencyConveterCalculatorRouter.assembleModule(baseCurrency: baseCurrency, selectedCurrency: selectedCurrency)
             self.viewController?.present(vc, animated: true, completion: nil)
-        case .changeCurrencyBase(let baseCurrency , let currencies):
-            let vc = CurrencyChangeRouter.assembleModule(selectedCurrency: BehaviorRelay<Currency>(value: baseCurrency), CurrencysDataSource: BehaviorRelay<[Currency]>(value: currencies))
-            viewController?.navigationController?.pushViewController(vc, animated: true)
+        case .changeCurrencyBase(let selectedCurrency , let currencies):
+            let vc = CurrencyChangeRouter.assembleModule(selectedCurrency: selectedCurrency, CurrencysDataSource: BehaviorRelay<[Currency]>(value: currencies))
+            viewController?.present(vc, animated: true, completion: nil)
         }
     }
 

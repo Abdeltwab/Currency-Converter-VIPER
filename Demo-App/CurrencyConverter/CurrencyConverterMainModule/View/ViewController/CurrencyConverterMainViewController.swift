@@ -14,7 +14,7 @@ class CurrencyConverterMainViewController: UIViewController, CurrencyConverterMa
     
     //MARK: - Outlets
     @IBOutlet weak var baseCurrencyViewBtn: UIButton!
-    @IBOutlet weak var baseCurrencyLabel: UIView!
+    @IBOutlet weak var baseCurrencyLabel: UILabel!
     @IBOutlet weak var currencyRatesTable: UITableView!
 
     
@@ -46,7 +46,8 @@ extension CurrencyConverterMainViewController{
     }
     
     private func configureBinding(){
-        
+        bindCurrencyTitle()
+        bindBaseCurrencyViewTapped()
     }
     
     private func bindBaseCurrencyViewTapped(){
@@ -56,6 +57,18 @@ extension CurrencyConverterMainViewController{
                 viewModel.changeCurrencyTap.accept(())
             }).subscribe()
             .disposed(by: disposeBag)
+    }
+    
+    private func bindCurrencyTitle(){
+        guard let viewModel = self.presenter?.viewModel else {
+            return
+        }
+        
+        viewModel.selectedCurrency
+            .bind { [weak self] currency in
+                guard let self = self else {return}
+                self.baseCurrencyLabel.text = "\(currency.symbol)"
+            }.disposed(by: disposeBag)
     }
     
 }

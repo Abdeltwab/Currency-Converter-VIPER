@@ -45,6 +45,7 @@ extension CurrencyConverterMainPresenter{
     private func configureBinding(){
         bindFetchingCurrencyRates()
         bindSelectedCurrency()
+        bindChangeCurrency()
     }
     
     private func bindFetchingCurrencyRates(){
@@ -107,8 +108,7 @@ extension CurrencyConverterMainPresenter{
     }
     
     private func navigateToChangeCurrency(){
-        let baseCurrency = self.viewModel.baseCurrency.value
         let currencies = self.viewModel.dataSource.value
-        router.go(to: .changeCurrencyBase(baseCurrency: baseCurrency, currencies: currencies))
+        router.go(to: .changeCurrencyBase(selectedCurrency: self.viewModel.selectedCurrency, currencies: currencies))
     }
 }
