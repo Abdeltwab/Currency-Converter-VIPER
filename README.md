@@ -1,4 +1,4 @@
-# How to Get the APp Runnig 
+# How to Get the APP Runnig 
 
 1. clone the project 
 2. add your dev team 
@@ -15,4 +15,4 @@
 
 
 # TODO 
-1. unit testing 
+1. unit testing  (time-Limited)
