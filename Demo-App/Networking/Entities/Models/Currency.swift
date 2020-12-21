@@ -13,6 +13,7 @@ public struct Currency {
     public var rate: Double = 0.0
     public var flagLetter: String = ""
 
+    public init(){}
 
     init(symbol:String, rate:Double) {
         let flagBase = UnicodeScalar("🇦").value - UnicodeScalar("A").value

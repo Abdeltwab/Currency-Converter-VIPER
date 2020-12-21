@@ -17,12 +17,13 @@ class CurrencyConveterCalculatorRouter: CurrencyConveterCalculatorRouterProtocol
     
     
     //MARK:- Assemple
-    static func assembleModule() -> UIViewController {
+    static func assembleModule(baseCurrency: Currency, selectedCurrency:Currency) -> UIViewController {
         // Change to get view from storyboard if not using progammatic UI
         let view = CurrencyConveterCalculatorViewController()
         let interactor = CurrencyConveterCalculatorInteractor()
         let router = CurrencyConveterCalculatorRouter()
-        let presenter = CurrencyConveterCalculatorPresenter(viewController: view, interactor: interactor, router: router)
+        let viewModel = CurrencyConveterCalculatorViewModel(baseCurrency: baseCurrency, selectedCurrency: selectedCurrency)
+        let presenter = CurrencyConveterCalculatorPresenter(viewController: view, interactor: interactor, router: router,viewModel: viewModel)
         
         view.presenter = presenter
         router.viewController = view

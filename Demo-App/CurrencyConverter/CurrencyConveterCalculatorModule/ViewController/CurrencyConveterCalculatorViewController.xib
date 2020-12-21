@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyConveterCalculatorViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyConveterCalculatorViewController" customModule="Demo_App" customModuleProvider="target">
             <connections>
+                <outlet property="baseCurrencyLabel" destination="olb-ia-B7E" id="xaa-9q-PkS"/>
+                <outlet property="baseCurrencyTextField" destination="07d-Vl-t8e" id="Zfq-Qi-jbI"/>
+                <outlet property="calcualateAmountButton" destination="LtZ-xg-X9c" id="nNP-JX-7YQ"/>
+                <outlet property="selectedCurrencyLabel" destination="PKo-jl-qEJ" id="rJQ-vM-6hd"/>
+                <outlet property="selectedCurrencyTextField" destination="SwU-5F-l1I" id="VRt-9J-iuT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,7 +22,103 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magical Covnerter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXp-Fu-PnJ">
+                    <rect key="frame" x="85" y="70" width="205" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="TfD-Q8-vfD">
+                    <rect key="frame" x="12.5" y="236" width="350" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123455999" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="07d-Vl-t8e" userLabel="base">
+                            <rect key="frame" x="0.0" y="0.0" width="133" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSu-Lx-0Nf">
+                            <rect key="frame" x="167" y="0.0" width="16" height="60"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123455999" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SwU-5F-l1I" userLabel="TTo">
+                            <rect key="frame" x="217" y="0.0" width="133" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="se7-tW-64n"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAA-B5-pWh" userLabel="bsse code">
+                    <rect key="frame" x="58" y="323" width="42.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3l-fg-RAU" userLabel="selected code">
+                    <rect key="frame" x="284.5" y="323" width="23.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EUR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olb-ia-B7E">
+                    <rect key="frame" x="63" y="194.5" width="32.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKo-jl-qEJ">
+                    <rect key="frame" x="279" y="194.5" width="34.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtZ-xg-X9c">
+                    <rect key="frame" x="127.5" y="381" width="120" height="40"/>
+                    <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="lqp-Ji-euy"/>
+                        <constraint firstAttribute="height" constant="40" id="xbE-0R-4V8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <state key="normal" title="Calculate">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="KrO-cg-Pgb"/>
+            <color key="backgroundColor" systemColor="systemYellowColor"/>
+            <constraints>
+                <constraint firstItem="TfD-Q8-vfD" firstAttribute="centerX" secondItem="KrO-cg-Pgb" secondAttribute="centerX" id="0pv-q1-ymI"/>
+                <constraint firstItem="SwU-5F-l1I" firstAttribute="top" secondItem="PKo-jl-qEJ" secondAttribute="bottom" constant="21" id="4jM-Ks-uKa"/>
+                <constraint firstItem="TfD-Q8-vfD" firstAttribute="top" secondItem="AXp-Fu-PnJ" secondAttribute="bottom" constant="137" id="8vf-vH-VXv"/>
+                <constraint firstItem="AXp-Fu-PnJ" firstAttribute="centerX" secondItem="KrO-cg-Pgb" secondAttribute="centerX" id="Aha-Dj-9Il"/>
+                <constraint firstItem="07d-Vl-t8e" firstAttribute="top" secondItem="olb-ia-B7E" secondAttribute="bottom" constant="21" id="DAY-v0-c5S"/>
+                <constraint firstItem="AXp-Fu-PnJ" firstAttribute="top" secondItem="KrO-cg-Pgb" secondAttribute="top" constant="70" id="PXy-HM-x5d"/>
+                <constraint firstItem="N3l-fg-RAU" firstAttribute="centerX" secondItem="SwU-5F-l1I" secondAttribute="centerX" id="Pba-CH-iVk"/>
+                <constraint firstItem="N3l-fg-RAU" firstAttribute="top" secondItem="SwU-5F-l1I" secondAttribute="bottom" constant="27" id="R53-JS-E1X"/>
+                <constraint firstItem="qAA-B5-pWh" firstAttribute="centerX" secondItem="07d-Vl-t8e" secondAttribute="centerX" id="agp-sm-jxE"/>
+                <constraint firstItem="PKo-jl-qEJ" firstAttribute="centerX" secondItem="SwU-5F-l1I" secondAttribute="centerX" id="fLL-3M-6Xr"/>
+                <constraint firstItem="olb-ia-B7E" firstAttribute="centerX" secondItem="07d-Vl-t8e" secondAttribute="centerX" id="lCY-QF-YnB"/>
+                <constraint firstItem="LtZ-xg-X9c" firstAttribute="top" secondItem="TfD-Q8-vfD" secondAttribute="bottom" constant="85" id="m66-WT-d0k"/>
+                <constraint firstItem="LtZ-xg-X9c" firstAttribute="centerX" secondItem="TfD-Q8-vfD" secondAttribute="centerX" id="pVg-pf-9Lh"/>
+                <constraint firstItem="qAA-B5-pWh" firstAttribute="top" secondItem="07d-Vl-t8e" secondAttribute="bottom" constant="27" id="tYY-gV-QFF"/>
+            </constraints>
+            <point key="canvasLocation" x="-138.40000000000001" y="90.404797601199405"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

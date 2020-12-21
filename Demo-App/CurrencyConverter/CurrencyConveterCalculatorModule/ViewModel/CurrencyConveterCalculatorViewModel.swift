@@ -7,8 +7,22 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
+
 
 struct CurrencyConveterCalculatorViewModel {
     
-    let localization =  CurrencyConveterCalculatorLocalization()
+    let selectedCurrency: Currency
+    let baseCurrency:Currency
+
+    let baseCurrencyValue = BehaviorRelay<String>(value: "")
+    let selectedCurrencyValue = BehaviorRelay<String>(value: "")
+    let calcualateAmountButtonButtonTapped = PublishRelay<Void>()
+
+
+    init(baseCurrency:Currency, selectedCurrency: Currency) {
+        self.selectedCurrency = selectedCurrency
+        self.baseCurrency = baseCurrency
+    }
 }
