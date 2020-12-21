@@ -70,7 +70,7 @@ extension CurrencyConverterMainPresenter{
         viewModel.selectedCurrency
             .bind(onNext: { [weak self] currency in
                 guard let self = self else {return}
-                print(currency)
+                self.navigateToSelectedCurrency()
             }).disposed(by: disposeBag)
     }
 }
@@ -92,11 +92,9 @@ extension CurrencyConverterMainPresenter{
 //MARK:- navigation
 extension CurrencyConverterMainPresenter{
     
-//    private func navigateToBouquetDetails(bouquet: UserBouquetAddOn){
-//        router.go(to: .bouquetDetails(bouquet: bouquet))
-//    }
-//
-//    private func close(){
-//        router.go(to: .close)
-//    }
+    private func navigateToSelectedCurrency(){
+        let baseCurrency = self.viewModel.baseCurrency.value
+        let selectedCurrency = self.viewModel.selectedCurrency.value
+        router.go(to: .selectedCurrency(baseCurrency: baseCurrency, selectedCurrency: selectedCurrency))
+    }
 }

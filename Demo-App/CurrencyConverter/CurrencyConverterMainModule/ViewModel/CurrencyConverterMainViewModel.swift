@@ -13,7 +13,7 @@ import RxSwift
 struct CurrencyConverterMainViewModel {
     
     let dataSource = BehaviorRelay<[Currency]>(value: [])
-    let selectedCurrency = PublishRelay<Currency>()
-    let baseCurrency = PublishRelay<Currency>()
+    let selectedCurrency = BehaviorRelay<Currency>(value: Currency())
+    let baseCurrency = BehaviorRelay<Currency>(value: Currency())
     let fetchCurrencyRates = PublishRelay<Void>()
 }

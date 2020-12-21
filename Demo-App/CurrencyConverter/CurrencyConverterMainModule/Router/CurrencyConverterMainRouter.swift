@@ -34,7 +34,10 @@ class CurrencyConverterMainRouter: CurrencyConverterMainRouterProtocol {
     //MARK: - Routing
     func go(to route:CurrencyConverterMainRoute) {
         switch route {
-        default: break
+        case .selectedCurrency(let baseCurrency, let selectedCurrency):
+            let vc = CurrencyConveterCalculatorRouter.assembleModule(baseCurrency: baseCurrency, selectedCurrency: selectedCurrency)
+            self.viewController?.present(vc, animated: true, completion: nil)
+        case .changeCurrencyBase:break
         }
     }
 

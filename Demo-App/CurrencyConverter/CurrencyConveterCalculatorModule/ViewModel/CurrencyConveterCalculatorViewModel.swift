@@ -16,8 +16,8 @@ struct CurrencyConveterCalculatorViewModel {
     let selectedCurrency: Currency
     let baseCurrency:Currency
 
-    let baseCurrencyValue = BehaviorRelay<String>(value: "")
-    let selectedCurrencyValue = BehaviorRelay<String>(value: "")
+    let baseCurrencyValue = BehaviorRelay<String>(value: "0.0")
+    let selectedCurrencyValue = BehaviorRelay<String>(value: "0.0")
     let calcualateAmountButtonButtonTapped = PublishRelay<Void>()
 
 

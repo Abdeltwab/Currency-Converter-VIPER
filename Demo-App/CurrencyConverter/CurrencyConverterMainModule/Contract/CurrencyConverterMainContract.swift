@@ -12,7 +12,7 @@ import RxSwift
 
 //MARK: - Router
 enum CurrencyConverterMainRoute {
-    case selectedCurrency
+    case selectedCurrency(baseCurrency:Currency, selectedCurrency:Currency)
     case changeCurrencyBase
 }
 

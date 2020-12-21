@@ -42,6 +42,7 @@ extension CurrencyConveterCalculatorViewController{
     
     private func setupUI(){
         selectedCurrencyTextField.isUserInteractionEnabled = false
+        selectedCurrencyTextField.text = "\(0.0)"
         configureCurrencyCodesText()
     }
     
