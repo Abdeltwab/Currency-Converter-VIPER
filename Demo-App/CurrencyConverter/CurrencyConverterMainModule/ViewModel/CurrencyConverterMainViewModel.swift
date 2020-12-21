@@ -17,4 +17,8 @@ struct CurrencyConverterMainViewModel {
     let baseCurrency = BehaviorRelay<Currency>(value: Currency())
     let fetchCurrencyRates = PublishRelay<Void>()
     let changeCurrencyTap = PublishRelay<Void>()
+    
+    init(defaultcurrency: Currency) {
+        self.selectedCurrency.accept(defaultcurrency)
+    }
 }

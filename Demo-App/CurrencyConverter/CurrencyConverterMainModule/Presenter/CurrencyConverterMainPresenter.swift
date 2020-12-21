@@ -17,15 +17,16 @@ class CurrencyConverterMainPresenter: CurrencyConverterMainPresenterProtocol {
     var interactor: CurrencyConverterMainInteractorProtocol?
     private let router: CurrencyConverterMainRouterProtocol
     private let disposeBag = DisposeBag()
-    var viewModel =  CurrencyConverterMainViewModel ()  
+    var viewModel: CurrencyConverterMainViewModel
 
     
     
     //MARK:- init
-    init(viewController: CurrencyConverterMainViewControllerProtocol, interactor: CurrencyConverterMainInteractorProtocol?, router: CurrencyConverterMainRouterProtocol) {
+    init(viewController: CurrencyConverterMainViewControllerProtocol, interactor: CurrencyConverterMainInteractorProtocol?, router: CurrencyConverterMainRouterProtocol,viewModel: CurrencyConverterMainViewModel) {
         self.viewController = viewController
         self.interactor = interactor
         self.router = router
+        self.viewModel = viewModel
     }
     
     

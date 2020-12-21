@@ -21,11 +21,13 @@ class CurrencyConverterMainRouter: CurrencyConverterMainRouterProtocol {
     
     //MARK:- Assemple
     static func assembleModule() -> UIViewController {
-        
         let view = CurrencyConverterMainViewController()
         let interactor = CurrencyConverterMainInteractor()
         let router = CurrencyConverterMainRouter()
-        let presenter = CurrencyConverterMainPresenter(viewController: view, interactor: interactor, router: router)
+        let defaultCurrency = Currency(symbol: "EUR", rate: 0.0)
+
+        let viewModel = CurrencyConverterMainViewModel(defaultcurrency: defaultCurrency)
+        let presenter = CurrencyConverterMainPresenter(viewController: view, interactor: interactor, router: router,viewModel: viewModel)
         
         view.presenter = presenter
         router.viewController = view
