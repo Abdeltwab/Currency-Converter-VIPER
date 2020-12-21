@@ -19,9 +19,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-8a-fO9">
-                    <rect key="frame" x="114" y="263" width="136" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-8a-fO9">
+                    <rect key="frame" x="113.5" y="435" width="187" height="36"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <state key="normal" title="Currency Covnerter"/>
                     <connections>
                         <action selector="currencyCovverterBtnTapped:" destination="-1" eventType="touchUpInside" id="IjE-jf-VUt"/>
@@ -30,6 +30,10 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Sds-8a-fO9" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="8Ut-tp-lTa"/>
+                <constraint firstItem="Sds-8a-fO9" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="RGH-Ju-SmX"/>
+            </constraints>
             <point key="canvasLocation" x="-14" y="86"/>
         </view>
     </objects>
