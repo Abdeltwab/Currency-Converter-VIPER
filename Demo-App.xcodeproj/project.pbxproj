@@ -43,14 +43,15 @@
 		503D65BC25902E4A0071BD33 /* CurrencyConveterCalculatorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D65B225902E4A0071BD33 /* CurrencyConveterCalculatorInteractor.swift */; };
 		503D65BD25902E4A0071BD33 /* CurrencyConveterCalculatorLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D65B425902E4A0071BD33 /* CurrencyConveterCalculatorLocalization.swift */; };
 		503D65BE25902E4A0071BD33 /* CurrencyConveterCalculatorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D65B625902E4A0071BD33 /* CurrencyConveterCalculatorRouter.swift */; };
-		503D6614259042DA0071BD33 /* CurrencyBaseChangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D6606259042DA0071BD33 /* CurrencyBaseChangeViewModel.swift */; };
-		503D6615259042DA0071BD33 /* CurrencyBaseChangeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D6608259042DA0071BD33 /* CurrencyBaseChangeContract.swift */; };
-		503D6616259042DA0071BD33 /* CurrencyBaseChangePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D660A259042DA0071BD33 /* CurrencyBaseChangePresenter.swift */; };
-		503D6619259042DA0071BD33 /* CurrencyBaseChangeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D660F259042DA0071BD33 /* CurrencyBaseChangeInteractor.swift */; };
-		503D661A259042DA0071BD33 /* CurrencyBaseChangeLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D6611259042DA0071BD33 /* CurrencyBaseChangeLocalization.swift */; };
-		503D661B259042DA0071BD33 /* CurrencyBaseChangeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D6613259042DA0071BD33 /* CurrencyBaseChangeRouter.swift */; };
-		503D6629259044AA0071BD33 /* CurrencyBaseChangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503D6627259044AA0071BD33 /* CurrencyBaseChangeViewController.xib */; };
-		503D662A259044AA0071BD33 /* CurrencyBaseChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D6628259044AA0071BD33 /* CurrencyBaseChangeViewController.swift */; };
+		503D66412590A05B0071BD33 /* CurrencyChangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D66332590A05B0071BD33 /* CurrencyChangeViewModel.swift */; };
+		503D66422590A05B0071BD33 /* CurrencyChangeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D66352590A05B0071BD33 /* CurrencyChangeContract.swift */; };
+		503D66432590A05B0071BD33 /* CurrencyChangePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D66372590A05B0071BD33 /* CurrencyChangePresenter.swift */; };
+		503D66442590A05B0071BD33 /* CurrencyChangeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 503D66392590A05B0071BD33 /* CurrencyChangeViewController.xib */; };
+		503D66452590A05B0071BD33 /* CurrencyChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D663A2590A05B0071BD33 /* CurrencyChangeViewController.swift */; };
+		503D66462590A05B0071BD33 /* CurrencyChangeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D663C2590A05B0071BD33 /* CurrencyChangeInteractor.swift */; };
+		503D66482590A05B0071BD33 /* CurrencyChangeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D66402590A05B0071BD33 /* CurrencyChangeRouter.swift */; };
+		503D66582590A5090071BD33 /* UIButton+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D66572590A5090071BD33 /* UIButton+Extentions.swift */; };
+		503D66632590B1790071BD33 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503D66622590B1790071BD33 /* UIView+Extention.swift */; };
 		F3109F94234E472E3A65BA33 /* Pods_Demo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DBB980210B628965908C87 /* Pods_Demo_AppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,14 +117,15 @@
 		503D65B225902E4A0071BD33 /* CurrencyConveterCalculatorInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConveterCalculatorInteractor.swift; sourceTree = "<group>"; };
 		503D65B425902E4A0071BD33 /* CurrencyConveterCalculatorLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConveterCalculatorLocalization.swift; sourceTree = "<group>"; };
 		503D65B625902E4A0071BD33 /* CurrencyConveterCalculatorRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyConveterCalculatorRouter.swift; sourceTree = "<group>"; };
-		503D6606259042DA0071BD33 /* CurrencyBaseChangeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyBaseChangeViewModel.swift; sourceTree = "<group>"; };
-		503D6608259042DA0071BD33 /* CurrencyBaseChangeContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyBaseChangeContract.swift; sourceTree = "<group>"; };
-		503D660A259042DA0071BD33 /* CurrencyBaseChangePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyBaseChangePresenter.swift; sourceTree = "<group>"; };
-		503D660F259042DA0071BD33 /* CurrencyBaseChangeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyBaseChangeInteractor.swift; sourceTree = "<group>"; };
-		503D6611259042DA0071BD33 /* CurrencyBaseChangeLocalization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyBaseChangeLocalization.swift; sourceTree = "<group>"; };
-		503D6613259042DA0071BD33 /* CurrencyBaseChangeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyBaseChangeRouter.swift; sourceTree = "<group>"; };
-		503D6627259044AA0071BD33 /* CurrencyBaseChangeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencyBaseChangeViewController.xib; sourceTree = "<group>"; };
-		503D6628259044AA0071BD33 /* CurrencyBaseChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyBaseChangeViewController.swift; sourceTree = "<group>"; };
+		503D66332590A05B0071BD33 /* CurrencyChangeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyChangeViewModel.swift; sourceTree = "<group>"; };
+		503D66352590A05B0071BD33 /* CurrencyChangeContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyChangeContract.swift; sourceTree = "<group>"; };
+		503D66372590A05B0071BD33 /* CurrencyChangePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyChangePresenter.swift; sourceTree = "<group>"; };
+		503D66392590A05B0071BD33 /* CurrencyChangeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencyChangeViewController.xib; sourceTree = "<group>"; };
+		503D663A2590A05B0071BD33 /* CurrencyChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyChangeViewController.swift; sourceTree = "<group>"; };
+		503D663C2590A05B0071BD33 /* CurrencyChangeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyChangeInteractor.swift; sourceTree = "<group>"; };
+		503D66402590A05B0071BD33 /* CurrencyChangeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyChangeRouter.swift; sourceTree = "<group>"; };
+		503D66572590A5090071BD33 /* UIButton+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extentions.swift"; sourceTree = "<group>"; };
+		503D66622590B1790071BD33 /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
 		A7DEEF248A5FFAB948279BCF /* Pods-Demo-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-AppTests.release.xcconfig"; path = "Target Support Files/Pods-Demo-AppTests/Pods-Demo-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B156B897494AC81EE3863793 /* Pods-Demo-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-App.debug.xcconfig"; path = "Target Support Files/Pods-Demo-App/Pods-Demo-App.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB0D8EE913A2E9DC519B1FB /* Pods_Demo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +199,7 @@
 		503D648F258FDD8F0071BD33 /* Demo-App */ = {
 			isa = PBXGroup;
 			children = (
+				503D66562590A4DA0071BD33 /* Extentions */,
 				503D649E258FDD920071BD33 /* Info.plist */,
 				503D6534259010690071BD33 /* Root */,
 				503D653325900FA80071BD33 /* CurrencyConverter */,
@@ -317,7 +320,7 @@
 		503D653325900FA80071BD33 /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
-				503D6604259042DA0071BD33 /* CurrencyBaseChangeModule */,
+				503D66312590A05B0071BD33 /* CurrencyChangeModule */,
 				503D65A725902E4A0071BD33 /* CurrencyConveterCalculatorModule */,
 				503D654F2590148D0071BD33 /* CurrencyConverterMainModule */,
 			);
@@ -493,83 +496,75 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		503D6604259042DA0071BD33 /* CurrencyBaseChangeModule */ = {
+		503D66312590A05B0071BD33 /* CurrencyChangeModule */ = {
 			isa = PBXGroup;
 			children = (
-				503D6605259042DA0071BD33 /* ViewModel */,
-				503D6607259042DA0071BD33 /* Contract */,
-				503D6609259042DA0071BD33 /* Presenter */,
-				503D6620259044080071BD33 /* View */,
-				503D660E259042DA0071BD33 /* Interactor */,
-				503D6610259042DA0071BD33 /* Localization */,
-				503D6612259042DA0071BD33 /* Router */,
+				503D66322590A05B0071BD33 /* ViewModel */,
+				503D66342590A05B0071BD33 /* Contract */,
+				503D66362590A05B0071BD33 /* Presenter */,
+				503D66382590A05B0071BD33 /* ViewController */,
+				503D663B2590A05B0071BD33 /* Interactor */,
+				503D663F2590A05B0071BD33 /* Router */,
 			);
-			path = CurrencyBaseChangeModule;
+			path = CurrencyChangeModule;
 			sourceTree = "<group>";
 		};
-		503D6605259042DA0071BD33 /* ViewModel */ = {
+		503D66322590A05B0071BD33 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				503D6606259042DA0071BD33 /* CurrencyBaseChangeViewModel.swift */,
+				503D66332590A05B0071BD33 /* CurrencyChangeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		503D6607259042DA0071BD33 /* Contract */ = {
+		503D66342590A05B0071BD33 /* Contract */ = {
 			isa = PBXGroup;
 			children = (
-				503D6608259042DA0071BD33 /* CurrencyBaseChangeContract.swift */,
+				503D66352590A05B0071BD33 /* CurrencyChangeContract.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
 		};
-		503D6609259042DA0071BD33 /* Presenter */ = {
+		503D66362590A05B0071BD33 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				503D660A259042DA0071BD33 /* CurrencyBaseChangePresenter.swift */,
+				503D66372590A05B0071BD33 /* CurrencyChangePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		503D660B259042DA0071BD33 /* ViewController */ = {
+		503D66382590A05B0071BD33 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				503D6628259044AA0071BD33 /* CurrencyBaseChangeViewController.swift */,
-				503D6627259044AA0071BD33 /* CurrencyBaseChangeViewController.xib */,
+				503D66392590A05B0071BD33 /* CurrencyChangeViewController.xib */,
+				503D663A2590A05B0071BD33 /* CurrencyChangeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		503D660E259042DA0071BD33 /* Interactor */ = {
+		503D663B2590A05B0071BD33 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				503D660F259042DA0071BD33 /* CurrencyBaseChangeInteractor.swift */,
+				503D663C2590A05B0071BD33 /* CurrencyChangeInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		503D6610259042DA0071BD33 /* Localization */ = {
+		503D663F2590A05B0071BD33 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				503D6611259042DA0071BD33 /* CurrencyBaseChangeLocalization.swift */,
-			);
-			path = Localization;
-			sourceTree = "<group>";
-		};
-		503D6612259042DA0071BD33 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				503D6613259042DA0071BD33 /* CurrencyBaseChangeRouter.swift */,
+				503D66402590A05B0071BD33 /* CurrencyChangeRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
 		};
-		503D6620259044080071BD33 /* View */ = {
+		503D66562590A4DA0071BD33 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				503D660B259042DA0071BD33 /* ViewController */,
+				503D66572590A5090071BD33 /* UIButton+Extentions.swift */,
+				503D66622590B1790071BD33 /* UIView+Extention.swift */,
 			);
-			path = View;
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		AAC40D4E151FDE5F5D3270AB /* Frameworks */ = {
@@ -691,10 +686,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				503D649D258FDD920071BD33 /* LaunchScreen.storyboard in Resources */,
-				503D6629259044AA0071BD33 /* CurrencyBaseChangeViewController.xib in Resources */,
 				503D65BA25902E4A0071BD33 /* CurrencyConveterCalculatorViewController.xib in Resources */,
 				503D649A258FDD920071BD33 /* Assets.xcassets in Resources */,
 				503D6592259026220071BD33 /* CurrencyRateCell.xib in Resources */,
+				503D66442590A05B0071BD33 /* CurrencyChangeViewController.xib in Resources */,
 				503D65382590109B0071BD33 /* RootViewController.xib in Resources */,
 				503D65632590148D0071BD33 /* CurrencyConverterMainViewController.xib in Resources */,
 			);
@@ -824,37 +819,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503D66452590A05B0071BD33 /* CurrencyChangeViewController.swift in Sources */,
 				503D6508258FF3420071BD33 /* Currency.swift in Sources */,
 				503D65622590148D0071BD33 /* CurrencyConverterMainViewController.swift in Sources */,
-				503D6615259042DA0071BD33 /* CurrencyBaseChangeContract.swift in Sources */,
-				503D6614259042DA0071BD33 /* CurrencyBaseChangeViewModel.swift in Sources */,
-				503D662A259044AA0071BD33 /* CurrencyBaseChangeViewController.swift in Sources */,
 				503D64E8258FE5710071BD33 /* TargetType.swift in Sources */,
 				503D65B725902E4A0071BD33 /* CurrencyConveterCalculatorViewModel.swift in Sources */,
-				503D661B259042DA0071BD33 /* CurrencyBaseChangeRouter.swift in Sources */,
 				503D65BD25902E4A0071BD33 /* CurrencyConveterCalculatorLocalization.swift in Sources */,
 				503D65642590148D0071BD33 /* CurrencyConverterMainInteractor.swift in Sources */,
 				503D650D258FF5D60071BD33 /* CurrencyNetworkingProtocol.swift in Sources */,
 				503D65B825902E4A0071BD33 /* CurrencyConveterCalculatorContract.swift in Sources */,
-				503D6616259042DA0071BD33 /* CurrencyBaseChangePresenter.swift in Sources */,
-				503D6619259042DA0071BD33 /* CurrencyBaseChangeInteractor.swift in Sources */,
 				503D655F2590148D0071BD33 /* CurrencyConverterMainViewModel.swift in Sources */,
 				503D65652590148D0071BD33 /* CurrencyConverterMainLocalization.swift in Sources */,
 				503D65372590109B0071BD33 /* RootViewController.swift in Sources */,
+				503D66482590A05B0071BD33 /* CurrencyChangeRouter.swift in Sources */,
 				503D6593259026220071BD33 /* CurrencyRateCell.swift in Sources */,
 				503D65BC25902E4A0071BD33 /* CurrencyConveterCalculatorInteractor.swift in Sources */,
 				503D6512259006B70071BD33 /* BaseError.swift in Sources */,
+				503D66412590A05B0071BD33 /* CurrencyChangeViewModel.swift in Sources */,
 				503D64D6258FE1B90071BD33 /* CurrencyRatesEndPoint.swift in Sources */,
-				503D661A259042DA0071BD33 /* CurrencyBaseChangeLocalization.swift in Sources */,
 				503D65612590148D0071BD33 /* CurrencyConverterMainPresenter.swift in Sources */,
+				503D66632590B1790071BD33 /* UIView+Extention.swift in Sources */,
 				503D65602590148D0071BD33 /* CurrencyConverterMainContract.swift in Sources */,
 				503D65BE25902E4A0071BD33 /* CurrencyConveterCalculatorRouter.swift in Sources */,
 				503D65B925902E4A0071BD33 /* CurrencyConveterCalculatorPresenter.swift in Sources */,
 				503D64E9258FE5710071BD33 /* BaseAPI.swift in Sources */,
 				503D65662590148D0071BD33 /* CurrencyConverterMainRouter.swift in Sources */,
 				503D6491258FDD8F0071BD33 /* AppDelegate.swift in Sources */,
+				503D66582590A5090071BD33 /* UIButton+Extentions.swift in Sources */,
+				503D66462590A05B0071BD33 /* CurrencyChangeInteractor.swift in Sources */,
 				503D64F0258FF0070071BD33 /* CurrencyRatesService.swift in Sources */,
 				503D6493258FDD8F0071BD33 /* SceneDelegate.swift in Sources */,
+				503D66432590A05B0071BD33 /* CurrencyChangePresenter.swift in Sources */,
+				503D66422590A05B0071BD33 /* CurrencyChangeContract.swift in Sources */,
 				503D6503258FF1850071BD33 /* CurrencyRatesResponse.swift in Sources */,
 				503D65BB25902E4A0071BD33 /* CurrencyConveterCalculatorViewController.swift in Sources */,
 			);
