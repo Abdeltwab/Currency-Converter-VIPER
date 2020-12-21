@@ -126,6 +126,7 @@
 		503D66622590B1790071BD33 /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
 		503D66B12590C0060071BD33 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		503D66B22590C0060071BD33 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		503D66BF2590C1A20071BD33 /* Problems.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Problems.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A7DEEF248A5FFAB948279BCF /* Pods-Demo-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-AppTests.release.xcconfig"; path = "Target Support Files/Pods-Demo-AppTests/Pods-Demo-AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		B156B897494AC81EE3863793 /* Pods-Demo-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-App.debug.xcconfig"; path = "Target Support Files/Pods-Demo-App/Pods-Demo-App.debug.xcconfig"; sourceTree = "<group>"; };
 		BAB0D8EE913A2E9DC519B1FB /* Pods_Demo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +202,7 @@
 			children = (
 				503D649E258FDD920071BD33 /* Info.plist */,
 				503D6534259010690071BD33 /* Root */,
+				503D66BE2590C1680071BD33 /* ProblemsSets */,
 				503D653325900FA80071BD33 /* CurrencyConverter */,
 				503D652C25900F680071BD33 /* Others */,
 				503D652225900F240071BD33 /* Resources */,
@@ -565,6 +567,14 @@
 				503D66622590B1790071BD33 /* UIView+Extention.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		503D66BE2590C1680071BD33 /* ProblemsSets */ = {
+			isa = PBXGroup;
+			children = (
+				503D66BF2590C1A20071BD33 /* Problems.playground */,
+			);
+			path = ProblemsSets;
 			sourceTree = "<group>";
 		};
 		AAC40D4E151FDE5F5D3270AB /* Frameworks */ = {
