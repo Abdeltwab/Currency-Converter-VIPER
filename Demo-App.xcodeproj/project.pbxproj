@@ -199,11 +199,9 @@
 		503D648F258FDD8F0071BD33 /* Demo-App */ = {
 			isa = PBXGroup;
 			children = (
-				503D66562590A4DA0071BD33 /* Extentions */,
 				503D649E258FDD920071BD33 /* Info.plist */,
 				503D6534259010690071BD33 /* Root */,
 				503D653325900FA80071BD33 /* CurrencyConverter */,
-				503D64C6258FDDFA0071BD33 /* Networking */,
 				503D652C25900F680071BD33 /* Others */,
 				503D652225900F240071BD33 /* Resources */,
 			);
@@ -320,6 +318,8 @@
 		503D653325900FA80071BD33 /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
+				503D66562590A4DA0071BD33 /* Extentions */,
+				503D64C6258FDDFA0071BD33 /* Networking */,
 				503D66312590A05B0071BD33 /* CurrencyChangeModule */,
 				503D65A725902E4A0071BD33 /* CurrencyConveterCalculatorModule */,
 				503D654F2590148D0071BD33 /* CurrencyConverterMainModule */,
