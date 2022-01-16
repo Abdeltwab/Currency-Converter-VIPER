@@ -1,4 +1,4 @@
-# How to Get the APP Runnig 
+# How to Get the Demo Runnig 
 
 1. clone the project 
 2. add your dev team 
@@ -10,9 +10,7 @@
 
 - Root folder : The initail View Contoller for the app with link to currecny converter 
 - CurrencyConverter folder :  containes all realted code for currency covnnerter Demo along side with it's networking layer 
-- ProblemsSets folder :  Containes Answers for the Coding problems sets 
-- Questions Answers.md : Containes Answers for theoritcal Questions 
 
 
 # TODO 
-1. unit testing  (time-Limited)
+1. unit testing
