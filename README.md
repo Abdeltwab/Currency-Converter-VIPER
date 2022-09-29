@@ -12,9 +12,9 @@ i am using http://data.fixer.io/api APi
 
 <table>
   <tr>
-    <td>Search Screen while Loading  </td>
-     <td>Search Screen</td>
-     <td>Photo Details Screen</td>
+    <td> Value of Selected Currency to all other currencies    </td>
+     <td>Converter</td>
+     <td>Switch Currency </td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/16858825/192910726-d25d24c8-0a61-40bd-b593-0e40f94615f4.png" width=270 height=520></td>
