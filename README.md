@@ -3,12 +3,15 @@
 This is a demo project for a currnecy converter app , in which you can select any country currency and see the equlivant for any other currnecy.
 i am using http://data.fixer.io/api APi 
 
+
+## Tech Stack 
+
 - Architecture : VIPER + RxSwift 
 - Networking : Alamofire + ObjectMapper
 - UI: Storyboards 
 
 
-# screen shots 
+## screen shots 
 
 <table>
   <tr>
